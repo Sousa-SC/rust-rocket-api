@@ -1,0 +1,16 @@
+[debug]
+address = "127.0.0.1"
+port = 4242
+keep_alive = 5
+log_level = "normal"
+limits = { forms = 32768 }
+
+[release]
+address = "0.0.0.0"
+port = 8000
+keep_alive = 5
+log_level = "critical"
+limits = { forms = 32768 }
+
+[default.databases.sea_orm]
+url = "${DATABASE_URL}"

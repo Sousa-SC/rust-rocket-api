@@ -1,0 +1,19 @@
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[package]
+name = "rocket_api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+db = { path = "src/db" }
+migration = { path = "src/migrations" }
+generic_crud_proc_macro = { path = "src/generic_crud/proc_macro" }
+generic_crud_trait = { path = "src/generic_crud/trait" }
+
+rocket = { version = "0.5.0-rc.2", features = ["json"] }
+serde = { version = "1.0.151", features = ["derive"] }
+sea-orm = { version = "0.10.5", features = ["sqlx-postgres", "runtime-async-std-native-tls"] }
+
+sea-orm-rocket = "0.5.2"
+async-trait = "0.1.60"
+dotenvy = "0.15.6"
