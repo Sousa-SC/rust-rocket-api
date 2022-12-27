@@ -233,10 +233,3 @@ And we need to add the animal routes to the rocket in the rocket() fn.
 ```rust
 rocket = animal::routes::fuel(rocket);
 ```
-
-git init
-git add -all
-git commit -m "car and animal CRUD, generic CRUD, and readme explanation"
-git branch -M master
-git remote add origin git@github.com:Sousa-SC/rust-rocket-api.git
-git push -u origin master
