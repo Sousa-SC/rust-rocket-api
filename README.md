@@ -14,7 +14,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 #### 1. Clone the repository
 ```shell
-git clone  
+git clone https://github.com/Sousa-SC/rust-rocket-api
 ```
 
 #### 2. Build the project
